@@ -1,0 +1,61 @@
+
+.HeaderSection {
+    scroll-snap-align: start;
+}
+
+.Animation {
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 79%, 0 100%);
+
+}
+
+.Canvas {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    background-image: linear-gradient(to right bottom, rgba(0, 6, 9, 0.9), rgba(0, 4, 5, 0.9)), url(../../resources/keyboard.jpg);
+}
+
+.G {
+    padding-top: 30px;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.ProfileImage {
+    align-self: center;
+    height: 200px;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+
+.Name {
+    padding-top: 30px;
+    align-self: center;
+    color: #fff;
+    font-size: 4rem;
+}
+
+
+.FirstName {
+    font-family: 'Yellowtail', cursive;
+    letter-spacing: 7px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.LastName {
+    letter-spacing: 7px;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 100;
+    text-transform: uppercase;
+}
