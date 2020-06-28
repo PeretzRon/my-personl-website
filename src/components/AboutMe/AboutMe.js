@@ -1,7 +1,7 @@
 import React from "react";
 import classes from './AboutMe.module.css'
 import ScrollAnimation from 'react-animate-on-scroll';
-import Typist from 'react-typist';
+// import Typist from 'react-typist';
 
 const AboutMe = () => {
     return (

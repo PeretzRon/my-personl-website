@@ -9,9 +9,21 @@ const styles = {
         fontSize: 90,
         fontWeight: 'bold'
     },
+    size80 : {
+        fontSize: 80,
+        fontWeight: 'bold'
+    },
+    size70 : {
+        fontSize: 70,
+        fontWeight: 'bold'
+    },
+    size50 : {
+        fontSize: 50,
+        fontWeight: 'bold'
+    },
     small: {
         opacity: 0.7,
-        fontSize: 25
+        fontSize: 30
     }
 };
 
@@ -55,19 +67,25 @@ class CloudSkills extends Component {
                                 <div style={styles.large}>React</div>
                                 <div style={styles.large}>JavaScript</div>
                                 <div style={styles.large}>Java</div>
-                                <div style={styles.large}>CSS</div>
-                                <div style={styles.large}>HTML</div>
+                                <div style={styles.size80}>CSS</div>
+                                <div style={styles.size70}>HTML</div>
                                 <div style={styles.large}>Android</div>
                                 <div style={{fontFamily: 'courier'}}>Redux</div>
                                 <div style={{fontFamily: 'courier'}}>Elasticsearch</div>
-                                <div style={{fontSize: 30}}>Python</div>
-                                <div style={{fontStyle: 'italic'}}>C++</div>
+                                <div style={{fontSize: 50}}>Python</div>
+                                <div style={{fontStyle: 'italic', fontSize: '50'}}>C++</div>
                                 <div style={{fontWeight: 200}}>C</div>
                                 <div style={{color: 'green'}}>Kibana</div>
                                 <div>SQL</div>
                                 <div>MS Office</div>
-                                <div>React Router</div>
-                                <div>C#</div>
+                                <div style={{
+                                    fontFamily: 'serif',
+                                    fontSize: 60,
+                                    fontStyle: 'italic',
+                                    fontWeight: 'bold',
+                                    color: randomColor()
+                                }}>React Router</div>
+                                <div style={styles.size50}>C#</div>
                                 <div style={styles.small}>Node.js</div>
                                 <div style={styles.small}>MongoDB</div>
                             </TagCloud>
