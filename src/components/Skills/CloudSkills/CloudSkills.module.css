@@ -1,0 +1,82 @@
+.CloudTag {
+    height: 600px;
+    position: relative;
+
+}
+
+.HeaderWrapper {
+    transform: translateY(-40px);
+    margin-bottom: 40px;
+
+}
+
+.SkillHeader {
+    color: #fff;
+    text-align: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-family: 'Kalam', cursive;
+    font-weight: 700;
+}
+
+
+
+.AppOuter {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+    margin-top: 20px;
+    padding: 50px 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.AppInner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.TagCloud {
+    flex: 1;
+}
+
+.TagCloud > div {
+    transition: 1.4s;
+}
+
+.TagItemWrapper {
+    cursor: pointer;
+}
+
+.TagItemWrapper:hover {
+    z-index: 100;
+}
+
+.TagItemWrapper:hover .TagItemTooltip {
+    display: block;
+}
+
+.TagItemTooltip {
+    background: #c01916;
+    color: white;
+    margin-top: 5px;
+    z-index: 100;
+    display: none;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 1;
+    position: absolute;
+    min-width: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+

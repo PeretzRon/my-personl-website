@@ -4,17 +4,20 @@
 
 
 .Info {
-    padding: 30vh 70px 0 40px;
+    padding: 30vh 70px 170px 40px;
     color: black;
     font-family: 'Shadows Into Light', cursive;
-    /*clip-path: polygon(0 0, 75% 0, 100% 50%, 0% 100%);*/
+
 }
 
 
 .AboutMeSection {
-    height: 120vh;
     margin-top: -30vh;
-    background-image: linear-gradient(to right, #cecece, #8d8d8a);
+    background-image: linear-gradient(to right, #cecece, #f6f6f6);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 85%, 0 100%);
+    position: relative;
+    z-index: -1;
+    padding-top: 30px;
     /*scroll-snap-align: start;*/
 }
 
@@ -41,5 +44,6 @@
     .AboutMeSection p {
         font-size: 1.4rem;
     }
+
 }
 

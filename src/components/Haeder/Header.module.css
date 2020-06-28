@@ -5,7 +5,7 @@
 
 .Animation {
     height: 100vh;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 79%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 85%, 0 100%);
 
 }
 
