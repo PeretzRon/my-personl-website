@@ -1,4 +1,4 @@
-import React, {Component, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import randomColor from 'randomcolor';
 import TagCloud from 'react-tag-cloud';
 import classes from './CloudSkills.module.css'

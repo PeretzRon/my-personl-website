@@ -13,7 +13,6 @@ const Footer = props => {
                 </div>
                 <div className={classes.socialLinks}>
                     <ul >
-                        <li><a href="https://www.facebook.com/ron.peretz.334/" rel="noopener noreferrer" target='_blank'><FontAwesomeIcon className={classes.ionSocialFacebook} icon={icons.faFacebookSquare}/></a></li>
                         <li><a href="https://www.linkedin.com/in/ron-peretz-0597a3172/" rel="noopener noreferrer" target='_blank'><FontAwesomeIcon className={classes.ionSocialLinkedIn} icon={icons.faLinkedin}/></a></li>
                         <li><a href="https://github.com/PeretzRon" rel="noopener noreferrer" target='_blank'><FontAwesomeIcon className={classes.ionSocialGitHub} icon={icons.faGithubSquare}/></a></li>
                     </ul>
