@@ -1,0 +1,14 @@
+
+.SkillsSection {
+    padding-top: 30vh;
+    background-image: linear-gradient(to right bottom, rgba(0, 6, 9, 0.95), rgba(0, 4, 5,  0.95)), url(../../resources/keyboard-2.jpg);
+    margin-top: -30vh;;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
+    z-index: -4;
+
+}

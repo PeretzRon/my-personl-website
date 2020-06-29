@@ -6,14 +6,20 @@ import Skills from "./components/Skills/Skills";
 import Footer from "./components/Footer/Footer";
 
 function App() {
-  return (
-      <div>
-        <Header/>
-        <AboutMe/>
-        <Skills/>
-        <Footer/>
-      </div>
-  );
+    const [showTagCloud, setShowTagCloud] = React.useState(false);
+
+    function onChange(isVisible) {
+        setShowTagCloud(!isVisible);
+    }
+
+    return (
+        <div>
+            <Header change={onChange}/>
+            <AboutMe/>
+            {<Skills showCloud={showTagCloud}/>}
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;
