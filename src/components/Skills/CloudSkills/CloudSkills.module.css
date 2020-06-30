@@ -6,8 +6,7 @@
 
 .HeaderWrapper {
     transform: translateY(-40px);
-    margin-bottom: 30px;
-
+    margin-bottom: 50px;
 }
 
 .SkillHeader {
@@ -80,3 +79,11 @@
     text-align: center;
 }
 
+.Font80 {
+    font-size: 80pt;
+    font-family: 'courier', serif;
+}
+
+.Font50 {
+    font-size: 50pt;
+}

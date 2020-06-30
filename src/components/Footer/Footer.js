@@ -2,6 +2,7 @@ import React from "react";
 import classes from './Footer.module.css'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import * as icons from '@fortawesome/free-brands-svg-icons'
+import * as icon from '@fortawesome/free-solid-svg-icons';
 
 
 const Footer = props => {
@@ -18,8 +19,8 @@ const Footer = props => {
                     </ul>
                 </div>
                 <div className={classes.Resume}>
-                    <a href='https://www.dropbox.com/s/8k5ifc9bh1qepuj/Resume%20-%20Ron%20Peretz.pdf?dl=0'  rel="noopener noreferrer" target='_blank' >My Resume</a>
-                    <a className={classes.Plank} href='https://days-plank-challenge.web.app/'  rel="noopener noreferrer" target='_blank' >Have you heard about the Plank challenge?</a>
+                    <a href='https://www.dropbox.com/s/14kd56630cxxg3n/Resume%20-%20Ron%20Peretz.pdf?dl=0'  rel="noopener noreferrer" target='_blank' ><FontAwesomeIcon className={classes.icon} icon={icon.faFilePdf}/>My Resume</a>
+                    <a className={classes.Plank} href='https://days-plank-challenge.web.app/'  rel="noopener noreferrer" target='_blank' ><FontAwesomeIcon className={classes.icon} icon={icon.faRunning}/>Have you heard about the Plank challenge?</a>
                 </div>
             </div>
 

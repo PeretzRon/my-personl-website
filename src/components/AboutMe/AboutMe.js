@@ -14,8 +14,7 @@ const AboutMe = () => {
 
                     <ScrollAnimation animateOnce={true} animateIn="bounceInLeft">
                         <p>
-                            My name is Ron Peretz, and I’m a graduated Computer Science
-                            at HIT.
+                            My name is Ron Peretz, and I’m a graduate of Computer Science at HIT.
                         </p>
                     </ScrollAnimation>
                     <ScrollAnimation animateOnce={true} animateIn="fadeInRight">
@@ -33,7 +32,7 @@ const AboutMe = () => {
                     </ScrollAnimation>
                     <ScrollAnimation animateOnce={true} animateIn="fadeInRight">
                         <p>
-                            I don't have much experience but talented and learn quickly.
+                            I don't have much work experience in development but talented and learn quickly.
                         </p>
                     </ScrollAnimation>
                     <ScrollAnimation animateOnce={true} animateIn="fadeInLeft">

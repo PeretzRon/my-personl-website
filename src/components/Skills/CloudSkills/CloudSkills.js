@@ -4,36 +4,65 @@ import TagCloud from 'react-tag-cloud';
 import classes from './CloudSkills.module.css'
 import ScrollAnimation from 'react-animate-on-scroll';
 
-const styles = {
-    large: {
-        fontSize: 90,
-        fontWeight: 'bold'
-    },
-    size80: {
-        fontSize: 80,
-        fontWeight: 'bold'
-    },
-    size70: {
-        fontSize: 70,
-        fontWeight: 'bold'
-    },
-    size50: {
-        fontSize: 50,
-        fontWeight: 'bold'
-    },
-    small: {
-        opacity: 0.7,
-        fontSize: 30
-    }
-};
-
 const CloudSkills = props => {
     const [, setState] = React.useState({});
+    const [width, setWidth] = React.useState(window.innerWidth);
+
+    const styles = {
+        size90: {
+            fontSize: width > 750 ? 90 : 60,
+            fontWeight: 'bold',
+        },
+        size80: {
+            fontSize: width > 750 ? 80 : 50,
+            fontWeight: 'bold'
+        },
+        size70: {
+            fontSize: width > 750 ? 70 : 40,
+            fontWeight: 'bold'
+        },
+        size60: {
+            fontSize: width > 750 ? 66 : 30,
+            fontWeight: 'bold'
+        },
+        size50: {
+            fontSize: width > 750 ? 50 : 20,
+            fontWeight: 'bold'
+        },
+        small: {
+            opacity: 0.7,
+            fontSize: 30
+        },
+        style1: {
+            fontFamily: 'serif',
+            fontSize: width > 750 ? 60 : 30,
+            fontStyle: 'italic',
+            fontWeight: 'bold',
+        },
+        style2: {fontStyle: 'italic', fontSize: '50'},
+        style3:
+            {
+                fontStyle: 'courier',
+                fontSize: width > 750 ? 50 : 20,
+            },
+    };
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWidth(window.innerWidth);
+
+        }
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+
+        }
+    }, [])
 
     useEffect(() => {
         const interval = setInterval(() => {
             setState({});
-        }, 2000);
+        }, 3000);
 
         return () => clearInterval(interval);
 
@@ -68,28 +97,21 @@ const CloudSkills = props => {
                                 color: randomColor()
                             }}>OOP
                         </div>
-                        <div style={styles.large}>React</div>
-                        <div style={styles.large}>JavaScript</div>
-                        <div style={styles.large}>Java</div>
+                        <div style={{...styles.size90, color: randomColor()}}>React</div>
+                        <div style={{...styles.size90, color: randomColor()}}>JavaScript</div>
+                        <div style={{...styles.size90, color: randomColor()}}>Java</div>
                         <div style={styles.size80}>CSS</div>
                         <div style={styles.size70}>HTML</div>
-                        <div style={styles.large}>Android</div>
-                        <div style={{fontFamily: 'courier'}}>Redux</div>
+                        <div style={{...styles.size90, color: randomColor()}}>Android</div>
+                        <div style={{fontFamily: 'courier', fontSize: 50}}>Redux</div>
                         <div style={{fontFamily: 'courier'}}>Elasticsearch</div>
-                        <div style={{fontSize: 50}}>Python</div>
-                        <div style={{fontStyle: 'italic', fontSize: '50'}}>C++</div>
+                        <div style={styles.size50}>Python</div>
+                        <div style={styles.style2}>C++</div>
                         <div style={{fontWeight: 200}}>C</div>
-                        <div style={{color: 'green'}}>Kibana</div>
-                        <div>SQL</div>
-                        <div>MS Office</div>
-                        <div style={{
-                            fontFamily: 'serif',
-                            fontSize: 60,
-                            fontStyle: 'italic',
-                            fontWeight: 'bold',
-                            color: randomColor()
-                        }}>React Router
-                        </div>
+                        <div style={styles.size60}>Kibana</div>
+                        <div style={{...styles.size70, color: randomColor()}}>SQL</div>
+                        <div style={styles.size60}>MS Office</div>
+                        <div style={styles.style1}>React Router</div>
                         <div style={styles.size50}>C#</div>
                         <div style={styles.small}>Node.js</div>
                         <div style={styles.small}>MongoDB</div>

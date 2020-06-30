@@ -1,8 +1,8 @@
 
 .SkillsSection {
-    padding-top: 30vh;
+    padding-top: 35vh;
     background-image: linear-gradient(to right bottom, rgba(0, 6, 9, 0.95), rgba(0, 4, 5,  0.95)), url(../../resources/keyboard-2.jpg);
-    margin-top: -30vh;;
+    margin-top: -35vh;;
     display: flex;
     flex-direction: column;
     background-size: cover;
