@@ -113,6 +113,7 @@ const CloudSkills = props => {
                         <div style={styles.size60}>MS Office</div>
                         <div style={styles.style1}>React Router</div>
                         <div style={styles.size50}>C#</div>
+                        <div style={styles.size50}>REST</div>
                         <div style={styles.small}>Node.js</div>
                         <div style={styles.small}>MongoDB</div>
                     </TagCloud>
