@@ -31,14 +31,15 @@ const AboutMe = () => {
                         </p>
                     </ScrollAnimation>
                     <ScrollAnimation animateOnce={true} animateIn="fadeInRight">
-                        <p>
+                        <p >
                             I don't have much work experience in development but talented and learn quickly.
                         </p>
                     </ScrollAnimation>
                     <ScrollAnimation animateOnce={true} animateIn="fadeInLeft">
-                        <p>
-                            <span style={{fontWeight: "bold"}}>Now looking for my first development job.</span>
+                        <p className={classes.UnderLine} >
+                            <span >Now looking for my first development job.</span>
                         </p>
+                        <p style={{fontWeight: "bold"}}>Now working as a software developer at NGSoft.</p>
                     </ScrollAnimation>
                 </div>
             </ScrollAnimation>
